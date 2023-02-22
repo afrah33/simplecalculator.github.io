@@ -1,19 +1,29 @@
 body{
 	background: #EAF5F8;
 }
+h1{
+	text-align: center;
+	color: black;
+	font-size: 35px;
 
+}
 .container{
-	max-width: 400px;
-	margin: 10vh 10vh 10vh 75vh;
-	box-shadow: 0 5px 5px 10px rgb(160,177,182);
+	max-width: 25%;
+	margin: 1% 5% 3% 37%;
+/*	box-shadow: 0 5px 5px 10px rgb(160,177,182);*/
+/*	box-shadow: 0px 0px 0px blue, 10px 10px 8px red, 15px 15px 8px green;*/
+	box-shadow: 5px 10px 18px red;
+	box-shadow: 5px 10px 20px red inset;
 	background: #F8EAEE;
 }
 #display{
+	border: 1px solid black;
 	text-align: right;
-	height: 70px;/* this is the height of the display*/
+	height: 50px;/* this is the height of the display*/
 	line-height: 70px;
 	padding: 16px 8px;
 	font-size: 25px;
+	box-shadow: 5px 10px 20px red inset;
 
 }
 .buttons{
@@ -27,8 +37,8 @@ body{
 	border-right: 1px solid #999;
 }
 .button{
-	border:2px solid #999;
-	line-height: 100px;
+	border:2px solid black;
+	line-height: 80px;
 	text-align: center;
 	font-size: 25px;
 	cursor: pointer;
@@ -36,8 +46,9 @@ body{
 
 }
 #equal{
-	background-color: lightskyblue;
+	background-color: red inset;
 	color: black;
+	box-shadow: 5px 10px 20px red inset;
 
 }
 .button:hover{
@@ -57,6 +68,36 @@ body{
     box-shadow: 4px 4px 4px 4px #5a01a7;
     transition: 0.7s;
 
+}
+.social ul li{
+	display: inline;
+	padding: 1%;
+	align-items: center;
+	margin-inline: 3%;
+}
+.social{
+	margin-left: 34%;
+	 
+}
+.designer{
+	font-size: 25px;
+	margin-left: 11%;
+}
+
+/*CSS for mobile size or smaller screen devices*/
+@media only screen and (max-width:758px){
+	.container{
+	max-width: 350%;
+	margin: 1% 5% 2% 5%;
+	box-shadow: 0 5px 5px 10px rgb(160,177,182);
+	background: #F8EAEE;
+	box-shadow: 5px 10px 18px red;
+	box-shadow: 5px 10px 20px red inset;
+}
+	.social{
+		padding: 5%;
+		margin-left: 8%;
+	}
 }
 
 
